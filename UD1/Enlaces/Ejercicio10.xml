@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+    <pages>
+        <!-- Página principal -->
+        <page id="inicio">
+            <title>Inicio</title>
+            <url>Index.html</url>
+        </page>
+
+        <!-- Página de Tablas -->
+        <page id="tablas">
+            <title>Tablas</title>
+            <url>Tablas.html</url>
+            <description>Sección dedicada a tablas de skate personalizadas y profesionales.</description>
+        </page>
+
+        <!-- Página de Ejes -->
+        <page id="ejes">
+            <title>Ejes</title>
+            <url>Ejes.html</url>
+            <description>Sección dedicada a ejes de skate profesionales.</description>
+        </page>
+
+        <!-- Página de Rodamientos -->
+        <page id="rodamientos">
+            <title>Rodamientos</title>
+            <url>Rodamientos.html</url>
+            <description>Sección dedicada a rodamientos de skate profesionales para rodar.</description>
+        </page>
+
+        <!-- Página de Ropa Skate -->
+        <page id="ropa">
+            <title>Ropa Skate</title>
+            <url>Ropa.html</url>
+            <description>Encuentra la mejor ropa streetwear para skaters.</description>
+        </page>
+
+        <!-- Página de Accesorios -->
+        <page id="accesorios">
+            <title>Accesorios</title>
+            <url>Accesorios.html</url>
+            <description>Accesorios y repuestos esenciales para tu skate.</description>
+        </page>
+    </pages>
+
+    <!-- Relaciones de navegación -->
+    <navigation>
+        <link from="inicio" to="tablero"/>
+        <link from="inicio" to="ejes"/>
+        <link from="inicio" to="rodamientos"/>
+        <link from="inicio" to="ropa"/>
+        <link from="inicio" to="accesorios"/>
+    </navigation>
+</site>
