@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparación de Diseños</title>
+    <style>
+        /* Estilos comunes */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .contenedor {
+            margin-bottom: 40px;
+        }
+        .contenedor h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        /* Estilos para diseño fijo */
+        .diseño-fijo {
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        /* Estilos para diseño variable */
+        .diseño-variable {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        /* Estilos compartidos para ambos diseños */
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .nav {
+            background-color: #333;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .nav table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .nav td {
+            padding: 10px;
+            color: white;
+        }
+        .main {
+            min-height: 400px;
+            padding: 20px;
+            background-color: white;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Diseño Fijo -->
+    <div class="contenedor">
+        <h2>Diseño de Ancho Fijo (800px)</h2>
+        <table class="diseño-fijo">
+            <!-- Cabecera -->
+            <tr>
+                <td colspan="3" class="header">
+                    <h1>Mi Página Web</h1>
+                </td>
+            </tr>
+            
+            <!-- Navegación -->
+            <tr>
+                <td colspan="3" class="nav">
+                    <table>
+                        <tr>
+                            <td><a href="#" style="color: white; text-decoration: none;">Inicio</a></td>
+                            <td><a href="#" style="color: white; text-decoration: none;">Servicios</a></td>
+                            <td><a href="#" style="color: white; text-decoration: none;">Contacto</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Contenido Principal -->
+            <tr>
+                <td colspan="3" class="main">
+                    <h2>Contenido Principal</h2>
+                    <p>Este es un párrafo de ejemplo que muestra cómo el contenido se mantiene dentro del ancho fijo de 800 píxeles. Puedes redimensionar la ventana del navegador y verás que la página siempre mantiene su ancho constante.</p>
+                </td>
+            </tr>
+
+            <!-- Pie de página -->
+            <tr>
+                <td colspan="3" class="footer">
+                    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Diseño Variable -->
+    <div class="contenedor">
+        <h2>Diseño de Ancho Variable (max-width: 1200px)</h2>
+        <table class="diseño-variable">
+            <!-- Cabecera -->
+            <tr>
+                <td colspan="3" class="header">
+                    <h1>Mi Página Web</h1>
+                </td>
+            </tr>
+            
+            <!-- Navegación -->
+            <tr>
+                <td colspan="3" class="nav">
+                    <table>
+                        <tr>
+                            <td><a href="#" style="color: white; text-decoration: none;">Inicio</a></td>
+                            <td><a href="#" style="color: white; text-decoration: none;">Servicios</a></td>
+                            <td><a href="#" style="color: white; text-decoration: none;">Contacto</a></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Contenido Principal -->
+            <tr>
+                <td colspan="3" class="main">
+                    <h2>Contenido Principal</h2>
+                    <p>Este es un párrafo de ejemplo que muestra cómo el contenido se adapta al ancho de la ventana del navegador. El diseño tiene un ancho máximo de 1200px y se ajusta automáticamente a pantallas más pequeñas.</p>
+                </td>
+            </tr>
+
+            <!-- Pie de página -->
+            <tr>
+                <td colspan="3" class="footer">
+                    <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
