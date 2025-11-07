@@ -1,0 +1,20 @@
+#subtitulo{
+    color:blueviolet;
+}
+
+.resaltado{
+    background-color: rgb(158, 152, 152);
+}
+
+li{
+    color: red;
+}
+
+[type="password"]{
+    border: 2px solid blue; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
