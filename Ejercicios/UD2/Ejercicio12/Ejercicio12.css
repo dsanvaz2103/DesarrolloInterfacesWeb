@@ -1,0 +1,58 @@
+/* Estilo general */
+body {
+  font-family: Arial, sans-serif;
+  color: blue;
+}
+
+.parent {
+  font-family: 'Courier New', monospace;
+  color: red;
+}
+
+.default {
+  font-family: Verdana, sans-serif;
+  color: green;
+}
+
+/*
+El inherit fuerza la herencia en este caso de la fuente y color de la clase padre en este caso font-family: 'Courier New', monospace; color: red;
+*/
+.inherit {
+  font-family: inherit;
+  color: inherit;
+}
+
+.initial {
+  font-family: initial;
+  color: initial;
+}
+
+.unset {
+  font-family: unset;
+  color: unset;
+}
+
+.revert {
+  font-family: revert;
+  color: revert;
+}
+
+/*
+1. ¿Qué estilo toma el texto con inherit? ¿Por qué?
+El texto con 'inherit' toma el estilo del elemento padre. En este caso, hereda la fuente 'Courier New' y el color rojo del contenedor '.parent'.
+Esto sucede porque 'inherit' fuerza a que la propiedad copie el valor de su elemento padre, sin importar si normalmente la propiedad es heredable o no.
+
+2. ¿Cómo se comporta el texto con initial? ¿Qué significa este valor?
+El texto con 'initial' adopta el valor inicial definido por el estándar CSS. Es decir, ignora la herencia y usa el valor por defecto del navegador.
+En este caso, el texto aparece con la fuente 'Times New Roman' (o la fuente predeterminada del navegador) y color negro.
+
+3. ¿Qué sucede con unset? ¿Es diferente para propiedades heredables y no heredables?
+Sí, es diferente.
+- Para propiedades heredables (como 'color'), 'unset' actúa como 'inherit' → toma el valor del padre.
+- Para propiedades no heredables (como 'font-family'), 'unset' actúa como 'initial' → vuelve al valor por defecto del navegador.
+
+4. ¿Cómo actúa revert en comparación con los otros valores?
+El valor 'revert' deshace los estilos aplicados por el autor y restaura la propiedad al valor que tendría según la hoja de estilo del navegador
+(user-agent stylesheet) o una capa anterior de la cascada. Es decir, ignora las reglas CSS del documento y usa los valores predeterminados
+por el navegador o el sistema.
+*/
