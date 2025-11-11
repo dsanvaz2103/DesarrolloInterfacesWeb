@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 11 - Estilos en función de la jerarquía</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- 
+        El color final que se aplica al <h1> es el del estilo en línea,
+        porque los estilos en línea tienen mayor prioridad que cualquier
+        regla en el archivo CSS (aunque exista una clase o un ID).
+        Por lo tanto, gana el estilo inline.
+    -->
+    <h1 class="titulo" style="color: purple;">Título Principal</h1>
+
+    <!-- 
+        El color final de este párrafo será el definido por la regla de ID (#parrafo),
+        ya que las reglas de ID tienen mayor especificidad que las reglas de clase,
+        de tipo (elemento) o de orden.
+    -->
+    <p id="parrafo">Este es un párrafo de ejemplo</p>
+
+    <div class="contenedor">
+        <!-- 
+            Este párrafo tendrá el color definido con !important,
+            porque la declaración con !important tiene prioridad
+            sobre cualquier otra regla, incluso sobre una regla de ID
+            o de orden posterior en el archivo.
+        -->
+        <p class="texto">Texto dentro de un div</p>
+    </div>
+
+</body>
+</html>

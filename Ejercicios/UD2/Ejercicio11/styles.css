@@ -1,0 +1,31 @@
+/* Regla de elemento: Aplica a todos los <h1> */
+h1 {
+    color: blue;
+}
+
+/* Regla de clase: Aplica a los elementos con la clase .titulo */
+.titulo {
+    color: green;
+}
+
+/* Regla de ID: Aplica a los elementos con el ID #parrafo */
+#parrafo {
+    color: red;
+}
+
+/* Regla con !important: Aplica a los elementos con la clase .texto dentro de un div */
+div .texto {
+    color: orange !important;
+}
+
+/* Última regla del archivo: color general para todos los <p> */
+p {
+    color: gray;
+}
+
+/*
+Resumen:
+- <h1> → color final: purple (por el estilo en línea, que tiene la mayor prioridad)
+- <p id="parrafo"> → color final: red (por la regla de ID #parrafo)
+- <p class="texto" dentro del div> → color final: orange (por la regla con !important)
+*/
