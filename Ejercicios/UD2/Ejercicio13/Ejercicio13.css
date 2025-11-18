@@ -1,7 +1,7 @@
 /* Herencia general */
 
 body {
-    color:rgb(172, 14, 211);
+    color:rgb(124, 98, 131);
     font-family: Arial, sans-serif;
 }
 
@@ -21,7 +21,7 @@ section p {
 /* parrafp con el id override que sobrescriba el color general*/
 
 #override {
-    color: rgb(20, 163, 220)
+    color: rgb(20, 220, 137)
 }
 
 /* titulo principal: heredar color pero como mayor tamaño*/
