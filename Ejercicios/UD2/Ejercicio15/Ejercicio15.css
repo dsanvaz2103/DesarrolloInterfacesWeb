@@ -26,7 +26,8 @@
 
  /* 2. Imagen de Fondo: Usa una URL de imagen de prueba, ajusta la repetición, tamaño y posición. */
  .image-box {
-     background-image: url('https://www.shutterstock.com/image-photo/closeup-great-spotted-owl-on-600nw-1790765729.jpg');
+     /* URL de imagen de prueba: https://picsum.photos/id/237/200/300 */
+     background-image: url('https://picsum.photos/id/237/200/300');
      background-repeat: no-repeat;
      /* Por ejemplo: no-repeat, repeat-x, repeat-y */
      background-size: cover;
@@ -43,11 +44,11 @@
 
  /* 4. Fondo Múltiple: Combina una imagen y un gradiente, separados por una coma. */
  .multiple-box {
-     /* Capa 1: Un gradiente oscuro, Capa 2: Una imagen. URL de imagen de prueba: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-kbns9UuIrxlSwmiJJCqR4nXT_x6bT5jRg&s */
+     /* Capa 1: Un gradiente oscuro, Capa 2: Una imagen. URL de imagen de prueba: https://picsum.photos/id/200/400/200 */
      background-image:
          linear-gradient(rgba(148, 22, 207, 0.5), rgba(164, 219, 11, 0.5)),
          /* Gradiente (primera capa) */
-         url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-kbns9UuIrxlSwmiJJCqR4nXT_x6bT5jRg&s');
+         url('https://picsum.photos/id/200/400/200');
      /* Imagen (segunda capa) */
 
      background-size: cover;
@@ -60,5 +61,5 @@
      color: ffc107;
      /* Color del texto, por ejemplo: white, #ffc107 */
      /* rgba(R, G, B, Alpha). Alpha es la opacidad (0.0 a 1.0) */
-     background-color: rgba(206, 121, 9, 0.5);
+     background-color: rgba(206, 9, 9, 0.5);
  }
