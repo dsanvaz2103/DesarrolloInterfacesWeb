@@ -1,0 +1,32 @@
+#padre{
+    margin-top: auto;
+    background-color: rgb(255, 0, 76);
+    position: relative;
+}
+#div1{
+    position: static;
+    background-color: aqua;
+}
+
+#div2{
+    position: relative;
+    top: 23px;
+    right: 233px;
+    background-color: blue;
+}
+
+#div3{
+    position: absolute;
+    background-color: brown;
+}
+
+#div4{
+    position: fixed;
+    background-color: green;
+}
+
+#div5{
+    position: sticky;
+    bottom: 233px;
+    background-color: aquamarine;
+}

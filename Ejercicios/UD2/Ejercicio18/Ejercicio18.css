@@ -1,0 +1,33 @@
+/* Estilo del título */
+h1 {
+    font-family: serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Primer párrafo */
+.parrafo1 {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: none;
+}
+
+/* Segundo párrafo */
+.parrafo2 {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: none;
+}
+
+/* Tercer párrafo (fuente importada Roboto) */
+.parrafo3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-transform: capitalize;
+}

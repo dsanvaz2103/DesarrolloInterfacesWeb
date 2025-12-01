@@ -1,0 +1,28 @@
+/* Bloque ocupa todo el ancho */
+.block {
+    display: block;
+    background-color: lightblue;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/* Elementos en línea */
+.inline {
+    display: inline;
+    background-color: lightgreen;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+/* Combina características de block e inline */
+.inline-block {
+    display: inline-block;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Ocultar elemento */
+.botonOculto {
+    display: none;
+}

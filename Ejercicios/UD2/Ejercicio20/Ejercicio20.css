@@ -48,6 +48,6 @@ ul.recursos {
 ul.recursos li {
     /* Color del texto: gris oscuro */
     list-style-image: url('https://lh5.googleusercontent.com/LM0t4lybG4VsUyKDbDizCDZEA6y2ZeRBIqRw4RMFM8-ggC5cFhphukFT-h24CWqwycbNcvVutbJeGlueYS4zwVmBzJVyiaz-QHbRCufuJJKe8_5SEVROgxGAKk9YlzyGlxBFX-Uyl0CIxObBSXxvow');
-    list-style-position: inside;
+    list-style-position: inside ;
     color: #444444; 
 }

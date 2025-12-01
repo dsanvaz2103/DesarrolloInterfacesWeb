@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Display</title>
+    <link rel="stylesheet" href="display.css">
+</head>
+
+<body>
+    <h1>Ejemplo de las propiedades CSS <code>display</code> y <code>visibility</code></h1>
+
+    <p>
+        La propiedad <strong>display</strong> controla cómo se muestran los elementos, y <strong>visibility</strong> controla si son visibles o no sin afectar el flujo del documento.
+    </p>
+
+    <h2>Elementos de ejemplo</h2>
+
+    <div class="block">Soy un div con display: block</div>
+    <span class="inline">Span 1 (inline)</span>
+    <span class="inline">Span 2 (inline)</span>
+    <p class="inline-block">P con display: inline-block</p>
+    <p class="inline-block">Otro P con display: inline-block</p>
+
+    <!-- Botón con display -->
+    <button class="botonOculto" id="hiddenButton">Botón oculto (display)</button>
+    <button id="showButton">Mostrar/ocultar botón (display)</button>
+
+    <br><br>
+
+    <!-- Nuevo elemento para visibility -->
+    <div class="visibilidad" id="visibilidadDiv">Soy un div con visibility</div>
+    <button id="toggleVisibilityButton">Cambiar visibilidad</button>
+
+    <script>
+        // CONTROL DISPLAY
+        var boton = document.getElementById("showButton");
+        boton.addEventListener('click', cambiarEstiloBoton);
+
+        function cambiarEstiloBoton() {
+            var boton2 = document.getElementsByClassName("botonOculto")[0];
+            if (boton2.style.display === "none" || boton2.style.display === "") {
+                boton2.style.display = "block";
+            } else {
+                boton2.style.display = "none";
+            }
+        }
+
+        // CONTROL VISIBILITY
+        var visButton = document.getElementById("toggleVisibilityButton");
+        visButton.addEventListener('click', cambiarVisibilidad);
+
+        function cambiarVisibilidad() {
+            var elemento = document.getElementById("visibilidadDiv");
+            if (elemento.style.visibility === "hidden" || elemento.style.visibility === "") {
+                elemento.style.visibility = "visible";
+            } else {
+                elemento.style.visibility = "hidden";
+            }
+        }
+    </script>
+</body>
+
+</html>
